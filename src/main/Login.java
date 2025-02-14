@@ -13,15 +13,20 @@ public class Login {
 
         loginView = new JFrame();
         loginView.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        loginView.setLayout(new BorderLayout());
+        loginView.setLayout(new BoxLayout(loginView, BoxLayout.Y_AXIS));
 
         adminButton = new JButton("Admin Login");
+        adminButton.setPreferredSize(new Dimension(300,200));
 
         librarianButton = new JButton("Librarian Login");
+        librarianButton.setPreferredSize(new Dimension(300,200));
 
 
-        loginView.add(adminButton, BorderLayout.SOUTH);
-        loginView.add(librarianButton, BorderLayout.CENTER);
+        loginView.add(adminButton);
+        loginView.add(librarianButton);
+        loginView.pack();
+        loginView.setSize(500,600);
+
         loginView.setVisible(true);
     }
 }
