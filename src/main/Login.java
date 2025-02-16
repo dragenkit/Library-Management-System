@@ -13,7 +13,7 @@ public class Login {
 
         loginView = new JFrame();
         loginView.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        loginView.setLayout(new BoxLayout(loginView, BoxLayout.Y_AXIS));
+        loginView.getContentPane().setLayout(new BoxLayout(loginView.getContentPane(), BoxLayout.Y_AXIS));
 
         adminButton = new JButton("Admin Login");
         adminButton.setPreferredSize(new Dimension(300,200));
