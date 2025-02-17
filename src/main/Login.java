@@ -17,10 +17,11 @@ public class Login {
 
         adminButton = new JButton("Admin Login");
         adminButton.setPreferredSize(new Dimension(300,200));
+        adminButton.setFont(new Font("Arial", Font.PLAIN, 40));
 
         librarianButton = new JButton("Librarian Login");
         librarianButton.setPreferredSize(new Dimension(300,200));
-
+        librarianButton.setFont(new Font("Arial", Font.PLAIN, 40));
 
         loginView.add(adminButton);
         loginView.add(librarianButton);
