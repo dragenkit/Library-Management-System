@@ -13,7 +13,8 @@ public class Login {
 
         loginView = new JFrame();
         loginView.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        loginView.getContentPane().setLayout(new BoxLayout(loginView.getContentPane(), BoxLayout.Y_AXIS));
+        loginView.setLayout( new GridBagLayout() );
+
 
         adminButton = new JButton("Admin Login");
         adminButton.setPreferredSize(new Dimension(300,200));
@@ -23,8 +24,8 @@ public class Login {
         librarianButton.setPreferredSize(new Dimension(300,200));
         librarianButton.setFont(new Font("Arial", Font.PLAIN, 40));
 
-        loginView.add(adminButton);
-        loginView.add(librarianButton);
+        loginView.add(adminButton, new GridBagConstraints());
+        loginView.add(librarianButton, new GridBagConstraints());
         loginView.pack();
         loginView.setSize(500,600);
 
