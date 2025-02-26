@@ -2,6 +2,7 @@ package src.main;
 
 
 import javax.swing.*;
+import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
 public class Login {
@@ -19,6 +20,7 @@ public class Login {
         adminButton = new JButton("Admin Login");
         adminButton.setPreferredSize(new Dimension(300,200));
         adminButton.setFont(new Font("Arial", Font.PLAIN, 40));
+        adminButton.setBorder( new EmptyBorder(0, -20, 0, -20) );
 
         librarianButton = new JButton("Librarian Login");
         librarianButton.setPreferredSize(new Dimension(300,200));
